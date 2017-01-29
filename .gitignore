@@ -26,11 +26,17 @@ config/secrets.yml
 
 # these should all be checked in to normalize the environment:
 # Gemfile.lock, .ruby-version, .ruby-gemset
+/db/*.sqlite3-journal
 
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
+/log/*
+/tmp/*
+!/log/.keep
 .rvmrc
+!/tmp/.keep
 
 # if using bower-rails ignore default bower_components path bower.json files
+/vendor/node_modules
 /vendor/assets/bower_components
 *.bowerrc
 bower.json
@@ -40,3 +46,4 @@ bower.json
 
 # Ignore Byebug command history file.
 .byebug_history
+/public/packs
